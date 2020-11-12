@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.model-close{
+  position: absolute;
+  right: 15px;
+  top:15px;
+  z-index: 100;
+}
+.modal-content .modal-body{
+  padding: 0;
+}
+.model-close svg{
+  font-size: 34px;
+}
+.App-link {
+  color: #61dafb;
+}
+
+.carousel.slide .carousel-control-prev-icon,
+.carousel.slide .carousel-control-next-icon{
+  background-color: #72777b;
+  padding: 20px;
+  border-radius: 20px;
+  background-size: 25px;
+}
+.image-container{
+  max-width: 1200px;
+  width:100%;
+  margin:auto;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.image-container:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+.contentModal {
+  width: 30%;
+  margin: 10px 1.5%;
+}
+
+.image-list{
+  margin-top: 20px;
+  width: 100%;
+  float: left;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.image-list label{
+  font-size: 16px;
+  display: block;
+  padding: 2px 5px;
+  margin:0;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 100;
+}
+
+.image-list label::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #eaeaea;
+  opacity: 0.6;
+}
+.image-list label span{
+  position: relative;
+  z-index: 100;
+  
+}
+.image {
+  min-height:300px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.price{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #454546;
+  color:#fff;
+  padding: 2px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.carousel-item img{
+  width: 100%;
+}
+.carousel .carousel-indicators{
+  margin: 0;
+  padding: 10px;
+  background-color: #929395;
+  opacity: 0.8;
+}
+.carousel .carousel-indicators li{
+  width: 0px;
+  height: 0px;
+  padding:4px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.carousel .carousel-indicators li.active{
+  background-color: #fff;
+}
+
+
+@media screen and (max-width:767px){
+  
+  .contentModal{
+  width:100%;
+}
+}
